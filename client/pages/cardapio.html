@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marta Pizzaria - Cardápio</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/cardapio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="../image/logo.png" alt="Logo da Marta Pizzaria" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="icons">
+        <a href="cart.html">
+          <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </a>
+        <a href="profile.html">
+          <div class="fas fa-user" id="user-profile"></div>
+        </a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="specials">
+      <section class="pizza-sizes">
+        <h2>Pizzas - Tamanhos Disponiveis</h2>
+        <div class="pizza-size">
+          <div class="pizza-details">
+            <h3>PEQUENA</h3>
+            <p>Até 2 Sabores</p>
+            <p>🍕4 Fatias</p>
+          </div>
+        </div>
+        <div class="pizza-size selected">
+          <div class="pizza-details">
+            <h3>MÉDIA</h3>
+            <p>Até 3 Sabores</p>
+            <p>🍕6 Fatias</p>
+          </div>
+        </div>
+        <div class="pizza-size">
+          <div class="pizza-details">
+            <h3>GRANDE</h3>
+            <p>Até 4 Sabores</p>
+            <p>🍕8 Fatias</p>
+          </div>
+        </div>
+        <div class="pizza-size">
+          <div class="pizza-details">
+            <h3>FAMÍLIA</h3>
+            <p>Até 4 Sabores</p>
+            <p>🍕12 Fatias</p>
+          </div>
+        </div>
+      </section>
+      <section class="specials">
+        <h2>Pizzas</h2>
+        <div class="pizza-card" data-name="Margherita" data-price="28.00">
+          <img src="../image/pizza8.jpg" alt="Pizza Especial 1" />
+          <h3>Margherita</h3>
+          <p>
+            Tomate cereja, mussarela de búfala, molho de tomate e manjericão
+            fresco.
+          </p>
+          <div class="size-selector">
+            <label for="size-margherita">Escolha o tamanho:</label>
+            <select id="size-margherita" class="size-select">
+              <option value="28">Pequena (R$ 28,00)</option>
+              <option value="42">Média (R$ 42,00)</option>
+              <option value="56">Grande (R$ 56,00)</option>
+              <option value="84">Família (R$ 84,00)</option>
+            </select>
+          </div>
+          <span class="price">R$<span class="price-value">28,00</span></span>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <a href="cart.html" class="add-to-cart">
+            <div class="fas fa-shopping-cart"></div>
+          </a>
+        </div>
+        <div class="pizza-card" data-name="Baiana" data-price="30.00">
+          <img src="../image/pizza2.jpg" alt="Pizza Especial 2" />
+          <h3>Baiana</h3>
+          <p>Queijo, calabresa, Azeitona, Tomate, Cebola, Orégano e Ovo.</p>
+          <div class="size-selector">
+            <label for="size-baiana">Escolha o tamanho:</label>
+            <select id="size-baiana" class="size-select">
+              <option value="30">Pequena (R$ 30,00)</option>
+              <option value="45">Média (R$ 45,00)</option>
+              <option value="60">Grande (R$ 60,00)</option>
+              <option value="90">Família (R$ 90,00)</option>
+            </select>
+          </div>
+          <span class="price">R$<span class="price-value">30,00</span></span>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <a href="cart.html" class="add-to-cart">
+            <div class="fas fa-shopping-cart"></div>
+          </a>
+        </div>
+        <div class="pizza-card" data-name="Portuguesa" data-price="28.00">
+          <img src="../image/pizza0.jpg" alt="Pizza Especial 3" />
+          <h3>Portuguesa</h3>
+          <p>Mussarela, Presunto, Ovos, Milho, Pimentão, Azeitona e Tomate.</p>
+          <div class="size-selector">
+            <label for="size-portuguesa">Escolha o tamanho:</label>
+            <select id="size-portuguesa" class="size-select">
+              <option value="28">Pequena (R$ 28,00)</option>
+              <option value="42">Média (R$ 42,00)</option>
+              <option value="56">Grande (R$ 56,00)</option>
+              <option value="84">Família (R$ 84,00)</option>
+            </select>
+          </div>
+          <span class="price">R$<span class="price-value">28,00</span></span>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <a href="cart.html" class="add-to-cart">
+            <div class="fas fa-shopping-cart"></div>
+          </a>
+        </div>
+        <div class="pizza-card" data-name="Milho" data-price="28.00">
+          <img src="../image/pizza9.jpg" alt="Pizza Especial 3" />
+          <h3>Milho</h3>
+          <p>Mussarela, Milho Verde, Azeitonas Fatiadas, Presunto e Tomate.</p>
+          <div class="size-selector">
+            <label for="size-milho">Escolha o tamanho:</label>
+            <select id="size-milho" class="size-select">
+              <option value="28">Pequena (R$ 28,00)</option>
+              <option value="42">Média (R$ 42,00)</option>
+              <option value="56">Grande (R$ 56,00)</option>
+              <option value="84">Família (R$ 84,00)</option>
+            </select>
+          </div>
+          <span class="price">R$<span class="price-value">20,00</span></span>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <a href="cart.html" class="add-to-cart">
+            <div class="fas fa-shopping-cart"></div>
+          </a>
+        </div>
+        <div class="pizza-card" data-name="Tomate Seco" data-price="28.00">
+          <img src="../image/pizza17.jpg" alt="Pizza Especial 3" />
+          <h3>Tomate Seco</h3>
+          <p>
+            Mussarela, Tomate Seco Artesanal, Manjericão e Azeitona Fatiada.
+          </p>
+          <div class="size-selector">
+            <label for="size-tomate-seco">Escolha o tamanho:</label>
+            <select id="size-tomate-seco" class="size-select">
+              <option value="28">Pequena (R$ 28,00)</option>
+              <option value="42">Média (R$ 42,00)</option>
+              <option value="56">Grande (R$ 56,00)</option>
+              <option value="84">Família (R$ 84,00)</option>
+            </select>
+          </div>
+          <span class="price">R$<span class="price-value">28,00</span></span>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <a href="cart.html" class="add-to-cart">
+            <div class="fas fa-shopping-cart"></div>
+          </a>
+        </div>
+        <div
+          class="pizza-card"
+          data-name="Manjericão e Tomate Seco"
+          data-price="28.00"
+        >
+          <img src="../image/pizza14.jpg" alt="Pizza Especial 3" />
+          <h3>Manjericão e Tomate Seco</h3>
+          <p>
+            Tomate Seco, Manjericão, Milho, Temperos finos e Molho Especial.
+          </p>
+          <div class="size-selector">
+            <label for="size-manjericao-tomate-seco">Escolha o tamanho:</label>
+            <select id="size-manjericao-tomate-seco" class="size-select">
+              <option value="28">Pequena (R$ 28,00)</option>
+              <option value="42">Média (R$ 42,00)</option>
+              <option value="56">Grande (R$ 56,00)</option>
+              <option value="84">Família (R$ 84,00)</option>
+            </select>
+          </div>
+          <span class="price">R$<span class="price-value">28,00</span></span>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <a href="cart.html" class="add-to-cart">
+            <div class="fas fa-shopping-cart"></div>
+          </a>
+        </div>
+        <div
+          class="pizza-card"
+          data-name="Brigadeiro Branco"
+          data-price="28.00"
+        >
+          <img src="../image/pizza15.jpg" alt="Pizza Especial 3" />
+          <h3>Brigadeiro Branco</h3>
+          <p>Brigadeiro Branco, Leite Ninho, Granulado e Leite Condensado</p>
+          <div class="size-selector">
+            <label for="size-brigadeiro">Escolha o tamanho:</label>
+            <select id="size-brigadeiro" class="size-select">
+              <option value="28">Pequena (R$ 28,00)</option>
+              <option value="42">Média (R$ 42,00)</option>
+              <option value="56">Grande (R$ 56,00)</option>
+              <option value="84">Família (R$ 84,00)</option>
+            </select>
+          </div>
+          <span class="price">R$<span class="price-value">28,00</span></span>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <a href="cart.html" class="add-to-cart">
+            <div class="fas fa-shopping-cart"></div>
+          </a>
+        </div>
+        <div
+          class="pizza-card"
+          data-name="Chocolate com Morango"
+          data-price="28.00"
+        >
+          <img src="../image/pizza16.jpg" alt="Pizza Especial 3" />
+          <h3>Chocolate com Morango</h3>
+          <p>Chocolate, Nutella, Leite Ninho, Morango e Leite Condensado</p>
+          <div class="size-selector">
+            <label for="size-chocolate-morango">Escolha o tamanho:</label>
+            <select id="size-chocolate-morango" class="size-select">
+              <option value="28">Pequena (R$ 28,00)</option>
+              <option value="42">Média (R$ 42,00)</option>
+              <option value="56">Grande (R$ 56,00)</option>
+              <option value="84">Família (R$ 84,00)</option>
+            </select>
+          </div>
+          <span class="price">R$<span class="price-value">28,00</span></span>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <a href="cart.html" class="add-to-cart">
+            <div class="fas fa-shopping-cart"></div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="footer-item">
+          <i class="fas fa-phone"></i>
+          (75) 1234-5678
+        </div>
+        <div class="footer-item">
+          <i class="fab fa-whatsapp"></i>
+          (75) 9 8765-4321
+        </div>
+        <div class="footer-item">
+          <i class="far fa-envelope"></i>
+          contato@martapizzaria.com.br
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link"
+          ><i class="fab fa-facebook-f"></i>facebook.com/martapizzaria</a
+        >
+        <a href="#" class="social-link"
+          ><i class="fab fa-instagram"></i> @martapizzaria</a
+        >
+      </div>
+      <div class="copyright">
+        <p>© 2024 Marta Pizzaria</p>
+      </div>
+    </footer>
+    <script src="../script/index.js"></script>
+  </body>
+</html>

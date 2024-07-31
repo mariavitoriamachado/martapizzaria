@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900&display=swap');
+
+:root {
+  --primary-color: #bf4e00;
+  --secondary-color: #febe1e;
+  --accent-color: #e63946;
+  --background-color: #f0c1a3;
+  --text-color: #333333;
+  --dark-color: #222222;
+  --red-color: #ae1919;
+  --light-color: #ffffff;
+  --grey-color: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--background-color);
+  border-radius: 0.5em;
+}
+
+body {
+  background: var(--light-color);
+  font-family: 'Piazzolla', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-bottom: 3px solid var(--red-color);
+}
+
+.logo img {
+  max-width: 200px;
+  margin-left: 0px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  color: var(--light-color);
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons .fas {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: var(--light-color);
+}
+
+.icons .fas:hover {
+  color: var(--secondary-color);
+}
+
+.container {
+  margin: 50px auto;
+  padding: 100px;
+  max-width: 900px;
+  background-color: var(--light-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container label {
+  margin-bottom: 15px;
+}
+
+.container input,
+.container textarea {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid var(--grey-color);
+  border-radius: 5px;
+}
+
+.container button {
+  padding: 15px 30px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.container button:hover {
+  padding: 15px 30px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.hero {
+  position: relative;
+  background-image: url('/client/image/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--light-color);
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+  position: relative;
+  z-index: 2;
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.specials {
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.specials h2 {
+  left: 50%;
+  margin-top: 0;
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.pizza-card {
+  flex: 0 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: var(--background-color);
+  padding: 0px 0px 60px 0px;
+}
+
+.pizza-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.pizza-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.pizza-card p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  margin-right: 20px;
+}
+
+.add-to-cart {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: var(--accent-color);
+}
+
+/* =================== */
+
+.pizza-size {
+  text-align: center;
+  width: 200px;
+  border: 2px solid var(--grey-color);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--background-color);
+  margin-right: 8px;
+}
+
+.pizza-size h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pizza-size p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.pizza-sizes {
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pizza-sizes h2 {
+  left: 50%;
+  margin-top: 0;
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-item {
+  margin: 10px;
+}
+
+.footer-item i {
+  margin-right: 5px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-link {
+  color: var(--light-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+.pizza-sizes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .specials {
+    padding: 30px 0;
+  }
+  .pizza-card {
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    color: var(--light-color);
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--accent-color);
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--light-color);
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+.menu-toggle i {
+  display: block;
+}
+
+/* Ocultar o menu-toggle em telas maiores */
+@media only screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
